@@ -1,0 +1,258 @@
+{
+	"BUILD_DIR" : "/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CReactorCore_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/mirrol/Documents/CReactorCore/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/mirrol/Documents/CReactorCore/src",
+	"CMAKE_EXECUTABLE" : "/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/Users/mirrol/Documents/CReactorCore/src/CMakeLists.txt",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6Config.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6Targets.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtFeature.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXCompilerFlag.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXSourceCompiles.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/CheckCompilerFlag.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFindDependencyMacro.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindThreads.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckLibraryExists.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckIncludeFileCXX.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXSourceCompiles.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageMessage.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6Config.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6Targets.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtFeature.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXCompilerFlag.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFindDependencyMacro.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindThreads.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckLibraryExists.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckIncludeFileCXX.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXSourceCompiles.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageMessage.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFindDependencyMacro.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6Config.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6Targets.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtFeature.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtFeatureCommon.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXCompilerFlag.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFindDependencyMacro.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/Qt6Dependencies.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindThreads.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckLibraryExists.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckIncludeFileCXX.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXSourceCompiles.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageMessage.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6/FindWrapAtomic.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CheckCXXSourceCompiles.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageHandleStandardArgs.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/FindPackageMessage.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeFindDependencyMacro.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeParseArguments.cmake",
+		"/Applications/Qt/6.2.2/macos/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/Users/mirrol/Documents/CReactorCore",
+	"DEP_FILE" : "/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CReactorCore_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "CReactorCore_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/lambda_mono_subscriber.h",
+			"MU",
+			"EWIEGA46WW/moc_lambda_mono_subscriber.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/map_subscriber.h",
+			"MU",
+			"EWIEGA46WW/moc_map_subscriber.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/mono.h",
+			"MU",
+			"EWIEGA46WW/moc_mono.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/mono_create.h",
+			"MU",
+			"EWIEGA46WW/moc_mono_create.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/mono_map.h",
+			"MU",
+			"EWIEGA46WW/moc_mono_map.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/mono_operator.h",
+			"MU",
+			"EWIEGA46WW/moc_mono_operator.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/mono_sink.h",
+			"MU",
+			"EWIEGA46WW/moc_mono_sink.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/mono_subscribe_on.h",
+			"MU",
+			"EWIEGA46WW/moc_mono_subscribe_on.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/operators.h",
+			"MU",
+			"EWIEGA46WW/moc_operators.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/optimizable_operator.h",
+			"MU",
+			"EWIEGA46WW/moc_optimizable_operator.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/publisher.h",
+			"MU",
+			"EWIEGA46WW/moc_publisher.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/reactor_core_global.h",
+			"MU",
+			"EWIEGA46WW/moc_reactor_core_global.cpp",
+			null
+		],
+		[
+			"/Users/mirrol/Documents/CReactorCore/src/subscriber.h",
+			"MU",
+			"EWIEGA46WW/moc_subscriber.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CReactorCore_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CReactorCore_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"CReactorCore_EXPORTS",
+		"QTLOTTIE_STATICs",
+		"QT_CORE_LIB",
+		"REACTOR_CORE_LIBRARY"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src",
+		"/Users/mirrol/Documents/CReactorCore/src",
+		"/Applications/Qt/6.2.2/macos/lib/QtCore.framework",
+		"/Applications/Qt/6.2.2/macos/lib/QtCore.framework/Headers",
+		"/Applications/Qt/6.2.2/macos/mkspecs/macx-clang",
+		"/Applications/Qt/6.2.2/macos/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/Users/mirrol/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/213.6461.75/CLion.app/Contents/bin/cmake/mac/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CReactorCore_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CMakeFiles/CReactorCore_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/Applications/Qt/6.2.2/macos/./libexec/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 2,
+	"SETTINGS_FILE" : "/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CMakeFiles/CReactorCore_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[ "/Users/mirrol/Documents/CReactorCore/test/main.cpp", "MU", null ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

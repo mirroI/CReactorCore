@@ -1,0 +1,12 @@
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CMakeFiles/rebuild_cache.dir
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CMakeFiles/edit_cache.dir
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CMakeFiles/CReactorCore.dir
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CMakeFiles/CReactorCore_autogen_timestamp_deps.dir
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/src/CMakeFiles/CReactorCore_autogen.dir
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/test/CMakeFiles/rebuild_cache.dir
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/test/CMakeFiles/edit_cache.dir
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/test/CMakeFiles/Test.dir
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/test/CMakeFiles/Test_autogen_timestamp_deps.dir
+/Users/mirrol/Documents/CReactorCore/cmake-build-debug/test/CMakeFiles/Test_autogen.dir
