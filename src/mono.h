@@ -24,7 +24,7 @@ class Mono : public CorePublisher<T> {
 	Mono<T> *subscribeOn();
 
 	template<typename OUT>
-	Mono<T> *map(std::function<OUT *(T *)> mapper);
+	Mono<OUT> *map(std::function<OUT *(T *)> mapper);
 
 	void subscribe(std::function<void(T *)> consumer,
 		std::function<void(const std::exception& exception)> errorConsumer = nullptr);
@@ -53,8 +53,8 @@ Mono<T> *Mono<T>::subscribeOn() {
 
 template<typename T>
 template<typename OUT>
-Mono<T> *Mono<T>::map(std::function<OUT *(T *)> mapper) {
-	return new MonoMap<T, T>(this, mapper, this);
+Mono<OUT> *Mono<T>::map(std::function<OUT *(T *)> mapper) {
+	return new MonoMap<T, OUT>(this, mapper, this);
 }
 
 template<typename T>

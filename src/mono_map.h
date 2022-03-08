@@ -16,7 +16,7 @@ class MonoMap : public InternalMonoOperator<IN, OUT> {
 
  public:
 	explicit MonoMap(Mono<IN> *source, std::function<OUT *(IN *)> mapper, QObject *parent);
-	CoreSubscriber<IN> *subscribeOrReturn(CoreSubscriber<IN> *actual) override;
+	CoreSubscriber<IN> *subscribeOrReturn(CoreSubscriber<OUT> *actual) override;
 };
 
 template<typename IN, typename OUT>
@@ -26,7 +26,7 @@ MonoMap<IN, OUT>::MonoMap(Mono<IN> *source, std::function<OUT *(IN *)> mapper, Q
 }
 
 template<typename IN, typename OUT>
-CoreSubscriber<IN> *MonoMap<IN, OUT>::subscribeOrReturn(CoreSubscriber<IN> *actual) {
+CoreSubscriber<IN> *MonoMap<IN, OUT>::subscribeOrReturn(CoreSubscriber<OUT> *actual) {
 	return new MapSubscriber<IN, OUT>(actual, _mapper);
 }
 

@@ -14,9 +14,6 @@ class MonoOperator : public Mono<OUT> {
 
  protected:
 	MonoOperator(Mono<IN> *source, QObject *parent);
-
- public:
-	virtual void subscribe(CoreSubscriber<IN> *subscriber) override = 0;
 };
 
 template<typename IN, typename OUT>
@@ -28,7 +25,7 @@ class InternalMonoOperator : public MonoOperator<IN, OUT>, public OptimizableOpe
 	InternalMonoOperator(Mono<IN> *source, QObject *parent);
 
  public:
-	virtual CoreSubscriber<IN> *subscribeOrReturn(CoreSubscriber<IN> *actual) override = 0;
+	virtual CoreSubscriber<IN> *subscribeOrReturn(CoreSubscriber<OUT> *actual) override = 0;
 	CorePublisher<IN> *source() override;
 	OptimizableOperator<QObject, IN> *nextOptimizableSource() override;
 
@@ -67,22 +64,21 @@ void InternalMonoOperator<IN, OUT>::subscribe(Subscriber<OUT> *subscriber) {
 
 template<typename IN, typename OUT>
 void InternalMonoOperator<IN, OUT>::subscribe(CoreSubscriber<OUT> *subscriber) {
-	OptimizableOperator<OUT, IN> *optimizableOperator = this;
+	OptimizableOperator<QObject, OUT> *optimizableOperator = (OptimizableOperator<QObject, OUT> *) this;
 
 	while (true) {
-		subscriber = optimizableOperator->subscribeOrReturn(subscriber);
+		subscriber = optimizableOperator->subscribeOrReturn((CoreSubscriber<QObject> *) subscriber);
 		if (subscriber == nullptr) {
 			return;
 		}
 
-		auto newOptimizableOperator = optimizableOperator->nextOptimizableSource();
-		if (nextOptimizableSource() == nullptr) {
+		OptimizableOperator<QObject, OUT> *newOptimizableOperator = optimizableOperator->nextOptimizableSource();
+		if (newOptimizableOperator == nullptr) {
 			return optimizableOperator->source()->subscribe(subscriber);
 		}
 
-//		optimizableOperator = newOptimizableOperator;
+		optimizableOperator = newOptimizableOperator;
 	}
 }
-
 
 #endif //CREACTORCORE_SRC_MONO_OPERATOR_H

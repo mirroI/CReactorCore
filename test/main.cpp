@@ -6,25 +6,28 @@
 #include <QThread>
 #include "mono.h"
 
+class QTest : public QObject {
+
+};
+
 int main(int argc, char *argv[]) {
-	Mono<int>::create([](MonoSink<int> *monoSink) {
-	  int *i = new int(1);
+	Mono<QObject>::create([](MonoSink<QObject> *monoSink) {
+	  QObject *i = new QObject();
+	  qDebug() << "OBJECT" << i;
 	  monoSink->success(i);
 	  qDebug() << QThread::currentThreadId();
 	})
 		->subscribeOn()
-		->map<int>([](int *value) {
-			return new int(2);
+		->map<QTest>([](QObject *value) {
+			return new QTest();
 		})
-		->subscribe([](int *value) {
+		->subscribe([](QTest *value) {
 		  qDebug() << QThread::currentThreadId();
-		  qDebug() << *value;
+		  qDebug() << value;
 		}, [](const std::exception& exception) {
 		  qDebug() << exception.what();
 		});
 
 	qDebug() << "MAIN"  << QThread::currentThreadId();
 	QThread::sleep(5);
-
-
 }

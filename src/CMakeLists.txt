@@ -31,11 +31,11 @@ endif ()
 target_link_libraries(${PROJECT_NAME} PUBLIC Qt${QT_VERSION_MAJOR}::Core)
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE
-        #        QT_NO_CAST_FROM_ASCII
-        #        QT_NO_CAST_TO_ASCII
-        #        QT_NO_KEYWORDS
-        #        QT_DEPRECATED_WARNINGS
-        #        QT_DISABLE_DEPRECATED_BEFORE=0x060100
+#        QT_NO_CAST_FROM_ASCII
+#        QT_NO_CAST_TO_ASCII
+#        QT_NO_KEYWORDS
+#        QT_DEPRECATED_WARNINGS
+#        QT_DISABLE_DEPRECATED_BEFORE=0x060100
         REACTOR_CORE_LIBRARY
         )
 
