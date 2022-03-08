@@ -2,8 +2,8 @@
 // Created by Алексей Сиротин on 19.01.2022.
 //
 
-#ifndef CREACTORCORE_SRC_PUBLISHER_H
-#define CREACTORCORE_SRC_PUBLISHER_H
+#ifndef REACTORCORE_SRC_PUBLISHER_H
+#define REACTORCORE_SRC_PUBLISHER_H
 
 #include <functional>
 
@@ -34,4 +34,4 @@ CorePublisher<T>::CorePublisher(QObject *parent):Publisher<T>(parent) {
 
 }
 
-#endif //CREACTORCORE_SRC_PUBLISHER_H
+#endif //REACTORCORE_SRC_PUBLISHER_H

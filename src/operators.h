@@ -2,8 +2,8 @@
 // Created by Алексей Сиротин on 05.02.2022.
 //
 
-#ifndef CREACTORCORE_SRC_OPERATORS_H
-#define CREACTORCORE_SRC_OPERATORS_H
+#ifndef REACTORCORE_SRC_OPERATORS_H
+#define REACTORCORE_SRC_OPERATORS_H
 
 #include "publisher.h"
 
@@ -30,4 +30,4 @@ CoreSubscriber<T> *Operators::toCoreSubscriber(Subscriber<T> *subscriber) {
 	return nullptr;
 }
 
-#endif //CREACTORCORE_SRC_OPERATORS_H
+#endif //REACTORCORE_SRC_OPERATORS_H

@@ -2,8 +2,8 @@
 // Created by Алексей Сиротин on 20.02.2022.
 //
 
-#ifndef CREACTORCORE_SRC_MONO_OPERATOR_H
-#define CREACTORCORE_SRC_MONO_OPERATOR_H
+#ifndef REACTORCORE_SRC_MONO_OPERATOR_H
+#define REACTORCORE_SRC_MONO_OPERATOR_H
 
 #include "mono.h"
 
@@ -81,4 +81,4 @@ void InternalMonoOperator<IN, OUT>::subscribe(CoreSubscriber<OUT> *subscriber) {
 	}
 }
 
-#endif //CREACTORCORE_SRC_MONO_OPERATOR_H
+#endif //REACTORCORE_SRC_MONO_OPERATOR_H

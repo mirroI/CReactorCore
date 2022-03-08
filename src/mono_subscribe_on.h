@@ -7,8 +7,8 @@
 #include "mono.h"
 #include "mono_operator.h"
 
-#ifndef CREACTORCORE_SRC_MONO_SUBSCRIBE_ON_H
-#define CREACTORCORE_SRC_MONO_SUBSCRIBE_ON_H
+#ifndef REACTORCORE_SRC_MONO_SUBSCRIBE_ON_H
+#define REACTORCORE_SRC_MONO_SUBSCRIBE_ON_H
 
 template<typename T>
 class MonoSubscribeOn : public InternalMonoOperator<T, T> {
@@ -89,4 +89,4 @@ void SubscribeOnSubscriber<T>::onComplete() {
 	_subscriber->onComplete();
 }
 
-#endif //CREACTORCORE_SRC_MONO_SUBSCRIBE_ON_H
+#endif //REACTORCORE_SRC_MONO_SUBSCRIBE_ON_H

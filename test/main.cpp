@@ -6,24 +6,24 @@
 #include <QThread>
 #include "mono.h"
 
-class QTest : public QObject {
-
-};
+//class QTest : public int {
+//
+//};
 
 int main(int argc, char *argv[]) {
-	Mono<QObject>::create([](MonoSink<QObject> *monoSink) {
-	  QObject *i = new QObject();
-	  qDebug() << "OBJECT" << i;
+	Mono<int>::create([](MonoSink<int> *monoSink) {
+	  int *i = new int(1);
+	  qDebug() << "OBJECT" << *i;
 	  monoSink->success(i);
 	  qDebug() << QThread::currentThreadId();
 	})
 		->subscribeOn()
-		->map<QTest>([](QObject *value) {
-			return new QTest();
+		->map<double>([](int *value) {
+			return new double(2.2);
 		})
-		->subscribe([](QTest *value) {
+		->subscribe([](double *value) {
 		  qDebug() << QThread::currentThreadId();
-		  qDebug() << value;
+		  qDebug() << *value;
 		}, [](const std::exception& exception) {
 		  qDebug() << exception.what();
 		});

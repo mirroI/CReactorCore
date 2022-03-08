@@ -2,8 +2,8 @@
 // Created by Алексей Сиротин on 27.01.2022.
 //
 
-#ifndef CREACTORCORE_SRC_SUBSCRIBER_H
-#define CREACTORCORE_SRC_SUBSCRIBER_H
+#ifndef REACTORCORE_SRC_SUBSCRIBER_H
+#define REACTORCORE_SRC_SUBSCRIBER_H
 
 #include <exception>
 
@@ -27,4 +27,4 @@ class CoreSubscriber : public Subscriber<T> {
 
 };
 
-#endif //CREACTORCORE_SRC_SUBSCRIBER_H
+#endif //REACTORCORE_SRC_SUBSCRIBER_H

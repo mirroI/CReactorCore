@@ -2,8 +2,8 @@
 // Created by Алексей Сиротин on 19.02.2022.
 //
 
-#ifndef CREACTORCORE_SRC_OPTIMIZABLE_OPERATOR_H
-#define CREACTORCORE_SRC_OPTIMIZABLE_OPERATOR_H
+#ifndef REACTORCORE_SRC_OPTIMIZABLE_OPERATOR_H
+#define REACTORCORE_SRC_OPTIMIZABLE_OPERATOR_H
 
 #include <QObject>
 
@@ -74,4 +74,4 @@ OptimizableOperator<QObject, T> *CorePublisherAdapter<T>::nextOptimizableSource(
 	return _optimizableOperator;
 }
 
-#endif //CREACTORCORE_SRC_OPTIMIZABLE_OPERATOR_H
+#endif //REACTORCORE_SRC_OPTIMIZABLE_OPERATOR_H

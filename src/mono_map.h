@@ -2,8 +2,8 @@
 // Created by Алексей Сиротин on 06.03.2022.
 //
 
-#ifndef CREACTORCORE_SRC_MONO_MAP_H
-#define CREACTORCORE_SRC_MONO_MAP_H
+#ifndef REACTORCORE_SRC_MONO_MAP_H
+#define REACTORCORE_SRC_MONO_MAP_H
 
 #include "mono.h"
 #include "mono_operator.h"
@@ -30,4 +30,4 @@ CoreSubscriber<IN> *MonoMap<IN, OUT>::subscribeOrReturn(CoreSubscriber<OUT> *act
 	return new MapSubscriber<IN, OUT>(actual, _mapper);
 }
 
-#endif //CREACTORCORE_SRC_MONO_MAP_H
+#endif //REACTORCORE_SRC_MONO_MAP_H

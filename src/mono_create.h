@@ -2,8 +2,8 @@
 // Created by Алексей Сиротин on 20.02.2022.
 //
 
-#ifndef CREACTORCORE_SRC_MONO_CREATE_H
-#define CREACTORCORE_SRC_MONO_CREATE_H
+#ifndef REACTORCORE_SRC_MONO_CREATE_H
+#define REACTORCORE_SRC_MONO_CREATE_H
 
 #include "mono.h"
 
@@ -38,4 +38,4 @@ void MonoCreate<T>::subscribe(CoreSubscriber<T> *actual) {
 	}
 }
 
-#endif //CREACTORCORE_SRC_MONO_CREATE_H
+#endif //REACTORCORE_SRC_MONO_CREATE_H

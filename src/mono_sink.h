@@ -2,8 +2,8 @@
 // Created by Алексей Сиротин on 20.01.2022.
 //
 
-#ifndef CREACTORCORE_SRC_MONO_SINK_H
-#define CREACTORCORE_SRC_MONO_SINK_H
+#ifndef REACTORCORE_SRC_MONO_SINK_H
+#define REACTORCORE_SRC_MONO_SINK_H
 
 #include <QObject>
 
@@ -65,4 +65,4 @@ void DefaultMonoSink<T>::error(const std::exception &exception) {
 	_actual->onError(exception);
 }
 
-#endif //CREACTORCORE_SRC_MONO_SINK_H
+#endif //REACTORCORE_SRC_MONO_SINK_H

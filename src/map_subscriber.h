@@ -2,8 +2,8 @@
 // Created by Алексей Сиротин on 06.03.2022.
 //
 
-#ifndef CREACTORCORE_SRC_MAP_SUBSCRIBER_H
-#define CREACTORCORE_SRC_MAP_SUBSCRIBER_H
+#ifndef REACTORCORE_SRC_MAP_SUBSCRIBER_H
+#define REACTORCORE_SRC_MAP_SUBSCRIBER_H
 
 #include "subscriber.h"
 
@@ -65,4 +65,4 @@ void MapSubscriber<IN, OUT>::onComplete() {
 	_subscriber->onComplete();
 }
 
-#endif //CREACTORCORE_SRC_MAP_SUBSCRIBER_H
+#endif //REACTORCORE_SRC_MAP_SUBSCRIBER_H

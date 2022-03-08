@@ -2,8 +2,8 @@
 // Created by Алексей Сиротин on 29.01.2022.
 //
 
-#ifndef CREACTORCORE_SRC_LAMBDA_MONO_SUBSCRIBER_H
-#define CREACTORCORE_SRC_LAMBDA_MONO_SUBSCRIBER_H
+#ifndef REACTORCORE_SRC_LAMBDA_MONO_SUBSCRIBER_H
+#define REACTORCORE_SRC_LAMBDA_MONO_SUBSCRIBER_H
 
 #include <functional>
 #include "subscriber.h"
@@ -66,4 +66,4 @@ void LambdaMonoSubscriber<T>::doError(const std::exception& exception) {
 	}
 }
 
-#endif //CREACTORCORE_SRC_LAMBDA_MONO_SUBSCRIBER_H
+#endif //REACTORCORE_SRC_LAMBDA_MONO_SUBSCRIBER_H

@@ -2,8 +2,8 @@
 // Created by Алексей Сиротин on 19.01.2022.
 //
 
-#ifndef CREACTORCORE_SRC_MONO_H
-#define CREACTORCORE_SRC_MONO_H
+#ifndef REACTORCORE_SRC_MONO_H
+#define REACTORCORE_SRC_MONO_H
 
 #include <QRunnable>
 #include "operators.h"
@@ -73,4 +73,4 @@ void Mono<T>::subscribe(Subscriber<T> *actual) {
 	publisher->subscribe(subscriber);
 }
 
-#endif //CREACTORCORE_SRC_MONO_H
+#endif //REACTORCORE_SRC_MONO_H
