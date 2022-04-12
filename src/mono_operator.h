@@ -13,7 +13,7 @@ class MonoOperator : public Mono<OUT> {
 	Mono<IN> *_source;
 
  protected:
-	MonoOperator(Mono<IN> *source, QObject *parent);
+	MonoOperator(Mono<IN> *source);
 };
 
 template<typename IN, typename OUT>
@@ -22,7 +22,7 @@ class InternalMonoOperator : public MonoOperator<IN, OUT>, public OptimizableOpe
 	OptimizableOperator<QObject, IN> *_optimizableOperator = nullptr;
 
  protected:
-	InternalMonoOperator(Mono<IN> *source, QObject *parent);
+	InternalMonoOperator(Mono<IN> *source);
 
  public:
 	virtual CoreSubscriber<IN> *subscribeOrReturn(CoreSubscriber<OUT> *actual) override = 0;
@@ -35,12 +35,11 @@ class InternalMonoOperator : public MonoOperator<IN, OUT>, public OptimizableOpe
 };
 
 template<typename IN, typename OUT>
-MonoOperator<IN, OUT>::MonoOperator(Mono<IN> *source, QObject *parent) : _source(source), Mono<OUT>(parent) {
+MonoOperator<IN, OUT>::MonoOperator(Mono<IN> *source) : _source(source) {
 }
 
 template<typename IN, typename OUT>
-InternalMonoOperator<IN, OUT>::InternalMonoOperator(Mono<IN> *source, QObject *parent):MonoOperator<IN, OUT>(source,
-	parent), OptimizableOperator<OUT, IN>(parent) {
+InternalMonoOperator<IN, OUT>::InternalMonoOperator(Mono<IN> *source):MonoOperator<IN, OUT>(source) {
 	if (OptimizableOperator<QObject, IN>
 		*optimizableOperator = dynamic_cast<OptimizableOperator<QObject, IN> *>(source)) {
 		_optimizableOperator = optimizableOperator;

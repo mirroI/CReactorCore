@@ -15,13 +15,13 @@ class MonoMap : public InternalMonoOperator<IN, OUT> {
 	std::function<OUT *(IN *)> _mapper;
 
  public:
-	explicit MonoMap(Mono<IN> *source, std::function<OUT *(IN *)> mapper, QObject *parent);
+	explicit MonoMap(Mono<IN> *source, std::function<OUT *(IN *)> mapper);
 	CoreSubscriber<IN> *subscribeOrReturn(CoreSubscriber<OUT> *actual) override;
 };
 
 template<typename IN, typename OUT>
-MonoMap<IN, OUT>::MonoMap(Mono<IN> *source, std::function<OUT *(IN *)> mapper, QObject *parent)
-	: _mapper(mapper), InternalMonoOperator<IN, OUT>(source, parent) {
+MonoMap<IN, OUT>::MonoMap(Mono<IN> *source, std::function<OUT *(IN *)> mapper)
+	: _mapper(mapper), InternalMonoOperator<IN, OUT>(source) {
 
 }
 

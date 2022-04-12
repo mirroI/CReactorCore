@@ -13,7 +13,7 @@
 template<typename T>
 class MonoSubscribeOn : public InternalMonoOperator<T, T> {
  public:
-	MonoSubscribeOn(Mono<T> *source, QObject *parent);
+	MonoSubscribeOn(Mono<T> *source);
 
 	CoreSubscriber<T> *subscribeOrReturn(CoreSubscriber<T> *actual) override;
 };
@@ -25,7 +25,7 @@ class SubscribeOnSubscriber : public CoreSubscriber<T>, public Subscription, pub
 	CoreSubscriber<T> *_subscriber;
 
  public:
-	explicit SubscribeOnSubscriber(Publisher<T> *publisher, CoreSubscriber<T> *subscriber, QObject *parent);
+	explicit SubscribeOnSubscriber(Publisher<T> *publisher, CoreSubscriber<T> *subscriber);
 
 	void run() override;
 
@@ -36,7 +36,7 @@ class SubscribeOnSubscriber : public CoreSubscriber<T>, public Subscription, pub
 };
 
 template<typename T>
-MonoSubscribeOn<T>::MonoSubscribeOn(Mono<T> *source, QObject *parent):InternalMonoOperator<T, T>(source, parent) {
+MonoSubscribeOn<T>::MonoSubscribeOn(Mono<T> *source):InternalMonoOperator<T, T>(source) {
 
 }
 
@@ -44,8 +44,7 @@ template<typename T>
 CoreSubscriber<T> *MonoSubscribeOn<T>::subscribeOrReturn(CoreSubscriber<T> *actual) {
 	SubscribeOnSubscriber<T> *parent = new SubscribeOnSubscriber<T>{
 		MonoOperator<T, T>::_source,
-		actual,
-		nullptr
+		actual
 	};
 
 	actual->onSubscribe(parent);
@@ -57,14 +56,12 @@ CoreSubscriber<T> *MonoSubscribeOn<T>::subscribeOrReturn(CoreSubscriber<T> *actu
 
 template<typename T>
 SubscribeOnSubscriber<T>::SubscribeOnSubscriber(Publisher<T> *publisher,
-	CoreSubscriber<T> *subscriber,
-	QObject *parent) : _subscriber(subscriber), _publisher(publisher) {
+	CoreSubscriber<T> *subscriber) : _subscriber(subscriber), _publisher(publisher) {
 
 }
 
 template<typename T>
 void SubscribeOnSubscriber<T>::run() {
-	qDebug() << "TEST1";
 	_publisher->subscribe(this);
 }
 
@@ -75,7 +72,6 @@ void SubscribeOnSubscriber<T>::onSubscribe(Subscription *subscription) {
 
 template<typename T>
 void SubscribeOnSubscriber<T>::onNext(T *value) {
-	qDebug() << "TEST2";
 	_subscriber->onNext(value);
 }
 

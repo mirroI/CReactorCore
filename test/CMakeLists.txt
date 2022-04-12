@@ -8,7 +8,7 @@ find_package(QT NAMES Qt6 Qt5 COMPONENTS Test REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Test REQUIRED)
 
 set(SOURCES
-        main.cpp)
+        main.cpp App.h)
 
 add_executable(${PROJEC_NAME}Test ${SOURCES})
 

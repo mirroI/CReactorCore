@@ -11,15 +11,13 @@
 #include "mono_sink.h"
 
 #include "lambda_mono_subscriber.h"
+#include "blocking_mono_subscriber.h"
 #include "optimizable_operator.h"
 
 template<typename T>
 class Mono : public CorePublisher<T> {
- protected:
-	explicit Mono(QObject *parent);
-
  public:
-	static Mono<T> *create(std::function<void(MonoSink<T> *monoSink)> callback, QObject *parent = nullptr);
+	static Mono<T> *create(std::function<void(MonoSink<T> *monoSink)> callback);
 
 	Mono<T> *subscribeOn();
 
@@ -31,6 +29,8 @@ class Mono : public CorePublisher<T> {
 
 	void subscribe(Subscriber<T> *subscriber) override;
 	virtual void subscribe(CoreSubscriber<T> *subscriber) override = 0;
+
+	T *block();
 };
 
 #include "mono_create.h"
@@ -38,23 +38,19 @@ class Mono : public CorePublisher<T> {
 #include "mono_map.h"
 
 template<typename T>
-Mono<T>::Mono(QObject *parent) : CorePublisher<T>(parent) {
-}
-
-template<typename T>
-Mono<T> *Mono<T>::create(std::function<void(MonoSink<T> *monoSink)> callback, QObject *parent) {
-	return new MonoCreate<T>(callback, parent);
+Mono<T> *Mono<T>::create(std::function<void(MonoSink<T> *monoSink)> callback) {
+	return new MonoCreate<T>(callback);
 }
 
 template<typename T>
 Mono<T> *Mono<T>::subscribeOn() {
-	return new MonoSubscribeOn<T>((Mono<T> *) this, nullptr);
+	return new MonoSubscribeOn<T>((Mono<T> *) this);
 }
 
 template<typename T>
 template<typename OUT>
 Mono<OUT> *Mono<T>::map(std::function<OUT *(T *)> mapper) {
-	return new MonoMap<T, OUT>(this, mapper, this);
+	return new MonoMap<T, OUT>(this, mapper);
 }
 
 template<typename T>
@@ -71,6 +67,14 @@ void Mono<T>::subscribe(Subscriber<T> *actual) {
 	//Сделать вызов core subscriber
 
 	publisher->subscribe(subscriber);
+}
+
+template<typename T>
+T *Mono<T>::block() {
+	BlockingMonoSubscriber<T> *subscriber = new BlockingMonoSubscriber<T>();
+	subscribe(subscriber);
+
+	return subscriber->blockingGet();
 }
 
 #endif //REACTORCORE_SRC_MONO_H

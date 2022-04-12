@@ -2,32 +2,16 @@
 // Created by Алексей Сиротин on 19.01.2022.
 //
 
-#include <QDebug>
-#include <QThread>
-#include "mono.h"
 
-//class QTest : public int {
-//
-//};
+#include <QCoreApplication>
+
+#include "App.h"
 
 int main(int argc, char *argv[]) {
-	Mono<int>::create([](MonoSink<int> *monoSink) {
-	  int *i = new int(1);
-	  qDebug() << "OBJECT" << *i;
-	  monoSink->success(i);
-	  qDebug() << QThread::currentThreadId();
-	})
-		->subscribeOn()
-		->map<double>([](int *value) {
-			return new double(2.2);
-		})
-		->subscribe([](double *value) {
-		  qDebug() << QThread::currentThreadId();
-		  qDebug() << *value;
-		}, [](const std::exception& exception) {
-		  qDebug() << exception.what();
-		});
+	QCoreApplication *a = new QCoreApplication(argc, argv);
 
-	qDebug() << "MAIN"  << QThread::currentThreadId();
-	QThread::sleep(5);
+	App *app = new App();
+	app->start();
+
+	return a->exec();
 }

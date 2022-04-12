@@ -13,20 +13,20 @@ class MonoCreate : public Mono<T> {
 	const std::function<void(MonoSink<T> *monoSink)> _callback;
 
  public:
-	explicit MonoCreate(std::function<void(MonoSink<T> *monoSink)> callback, QObject *parent);
+	explicit MonoCreate(std::function<void(MonoSink<T> *monoSink)> callback);
 
 	void subscribe(CoreSubscriber<T> *subscriber) override;
 };
 
 template<typename T>
-MonoCreate<T>::MonoCreate(std::function<void(MonoSink<T> *)> callback, QObject *parent)
-	: _callback(callback), Mono<T>(parent) {
+MonoCreate<T>::MonoCreate(std::function<void(MonoSink<T> *)> callback)
+	: _callback(callback) {
 
 }
 
 template<typename T>
 void MonoCreate<T>::subscribe(CoreSubscriber<T> *actual) {
-	DefaultMonoSink<T> *emitter = new DefaultMonoSink<T>(actual, this);
+	DefaultMonoSink<T> *emitter = new DefaultMonoSink<T>(actual);
 
 	actual->onSubscribe(emitter);
 

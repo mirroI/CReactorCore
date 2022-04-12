@@ -12,8 +12,6 @@
 template<typename IN, typename OUT>
 class  OptimizableOperator : public CorePublisher<IN> {
  public:
-	explicit OptimizableOperator(QObject *parent);
-
 	virtual CoreSubscriber<OUT> *subscribeOrReturn(CoreSubscriber<IN> *actual) = 0;
 	virtual CorePublisher<OUT> *source() = 0;
 	virtual OptimizableOperator<QObject, OUT> *nextOptimizableSource() = 0;
@@ -26,7 +24,7 @@ class CorePublisherAdapter : public CorePublisher<T>, public OptimizableOperator
 	const OptimizableOperator<QObject, T> *_optimizableOperator = nullptr;
 
  public:
-	explicit CorePublisherAdapter(Publisher<T> *publisher, QObject *parent);
+	explicit CorePublisherAdapter(Publisher<T> *publisher);
 
 	void subscribe(Subscriber<T> *subscriber) override;
 	void subscribe(CoreSubscriber<T> *subscriber) override;
@@ -36,14 +34,9 @@ class CorePublisherAdapter : public CorePublisher<T>, public OptimizableOperator
 	OptimizableOperator<QObject, T> *nextOptimizableSource() override;
 };
 
-template<typename IN, typename OUT>
-OptimizableOperator<IN, OUT>::OptimizableOperator(QObject *parent):CorePublisher<IN>(parent) {
-
-}
-
 template<typename T>
-CorePublisherAdapter<T>::CorePublisherAdapter(Publisher<T> *publisher, QObject *parent)
-	: _publisher(publisher), CorePublisher<T>(parent), OptimizableOperator<T, T>(parent) {
+CorePublisherAdapter<T>::CorePublisherAdapter(Publisher<T> *publisher)
+	: _publisher(publisher) {
 	if (OptimizableOperator<QObject, T> *optimizableOperator = static_cast<OptimizableOperator<QObject, T> *>(publisher)) {
 		_optimizableOperator = optimizableOperator;
 	}

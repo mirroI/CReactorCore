@@ -21,6 +21,7 @@ set(SOURCE
         mono_operator.h
         mono_map.h
         map_subscriber.h
+        blocking_mono_subscriber.h
         )
 
 add_library(${PROJECT_NAME} STATIC ${SOURCE})
